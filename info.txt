@@ -1,0 +1,47 @@
+Data Enginner
+extract data from the API using Azure Data Factory (data pipeline tool avaialable)
+
+steps:
+1) load the raw data onto the azure data lake storage 
+2) using azure databricks we write the spark code transform data 
+3) load back teh data to data lake storage 
+4) use Synapse Analytics to run teh SQL code on tge transformed data to get insights
+
+
+
+Dataset: Olympic data analytics
+
+data factory : build data pipeline to extract data from our data source 
+data lake : store the data 
+transformaton code : apache spark 
+azure synapse analytics : sql query 
+
+About Dataset:
+This contains the details of over 11,000 athletes, with 47 disciplines, along with 743 Teams taking part in the 2021(2020) Tokyo Olympics.
+This dataset contains the details of the Athletes, Coaches, Teams participating as well as the Entries by gender. It contains their names, countries represented, discipline, gender of competitors, name of the coaches.
+
+
+Services used :
+
+Data Factory
+Data lake
+Azure Databricks
+Synapse Analytics
+
+
+all the resources are stored inside the resource group 
+
+container - data is stored as an object 
+file share 
+queue
+Table
+
+1)  Storage 
+Create a container
+crete 2 directories -  raw data 
+                    -  transformed data
+
+2)  Data Factory 
+create pipeline to extract differnt sources and upload the data onto the target location 
+
+in the df - we drag drop the data block and slecify the source and the sink 
